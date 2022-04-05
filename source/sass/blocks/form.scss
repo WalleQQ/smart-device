@@ -25,6 +25,7 @@ form input {
 
 form textarea {
   padding: 25px 15px;
+  margin-bottom: 5px;
 }
 
 form label {
@@ -32,11 +33,7 @@ form label {
   font-size: $font-size-3;
 }
 
-form textarea {
-  margin-bottom: 5px;
-}
-
-form input[type="checkbox"] {
+form input[type='checkbox'] {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -44,26 +41,26 @@ form input[type="checkbox"] {
   opacity: 0;
 }
 
-form label[for="checkbox"] {
+form label[for='checkbox'] {
   position: relative;
   padding-left: 25px;
   cursor: pointer;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    background: url("../img/icons/checkbox.svg") 50% 50% no-repeat;
+    background: url('../img/icons/checkbox.svg') 50% 50% no-repeat;
   }
 }
 
-form input[type="checkbox"]:checked + label[for="checkbox"] {
+form input[type='checkbox']:checked + label[for='checkbox'] {
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 100;
     top: 50%;
@@ -71,11 +68,11 @@ form input[type="checkbox"]:checked + label[for="checkbox"] {
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    background: url("../../img/icons/checkbox-confirm.svg") 50% 50% no-repeat;
+    background: url('../../img/icons/checkbox-confirm.svg') 50% 50% no-repeat;
   }
 }
 
-form input[type="submit"] {
+form input[type='submit'] {
   background-color: $color-black-pearl;
   padding: 15px 60px;
   text-transform: uppercase;

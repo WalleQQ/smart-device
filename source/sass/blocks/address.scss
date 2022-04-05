@@ -1,0 +1,45 @@
+.address {
+  max-width: 345px;
+  margin-left: 28px;
+
+  @media (max-width: 1221px) {
+    padding-left: 23px;
+  }
+
+  @media (max-width: 769px) {
+    margin-left: 0;
+    padding-left: 0;
+  }
+}
+
+.address__content-wrapper {
+  display: block;
+
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+
+.address address {
+  font-style: normal;
+  color: $color-footer-nav-item;
+
+  @media (max-width: 1221px) {
+    margin-bottom: 10px;
+  }
+}
+
+.address__contacts-list {
+  @include list-zeroing;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  // @media (max-width: 769px) {
+  //   margin-top: 15px;
+  // }
+}
+
+.address__accordion details {
+  border-bottom: 1px solid $color-border;
+}

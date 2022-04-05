@@ -5,11 +5,18 @@
 @import 'global/reboot';
 @import 'global/utils';
 @import 'global/wrapper';
+@import 'global/mixins';
 
 @import 'blocks/page-header';
+@import 'blocks/logo';
 @import 'blocks/main-nav';
 @import 'blocks/button';
 @import 'blocks/modal';
 @import 'blocks/form';
 @import 'blocks/overlay';
 @import 'blocks/page-footer';
+@import 'blocks/footer-nav';
+@import 'blocks/socials';
+@import 'blocks/nav-section';
+@import 'blocks/address';
+@import 'blocks/accordion';

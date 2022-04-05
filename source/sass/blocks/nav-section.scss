@@ -1,0 +1,24 @@
+.nav-section {
+  max-width: 470px;
+
+  @media (max-width: 1221px) {
+    max-width: 202px;
+  }
+
+  @media (max-width: 769px) {
+    max-width: 100%;
+  }
+}
+
+.nav-section__content-wrapper {
+  display: block;
+
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+
+.nav-section__accordion details {
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+}

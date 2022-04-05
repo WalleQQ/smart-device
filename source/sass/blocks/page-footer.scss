@@ -1,3 +1,49 @@
 .page-footer {
+  padding: 53px 0;
   background-color: $color-black-pearl;
+
+  @media (max-width: 1221px) {
+    padding: 50px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 35px 0;
+  }
+}
+
+.page-footer .wrapper {
+  display: grid;
+  grid-template-columns: 325px 422px 1fr;
+  align-items: start;
+  gap: 50px;
+
+  @media (max-width: 1221px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  @media (max-width: 769px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.page-footer h3 {
+  font-family: $ff-roboto-condensed-regular;
+  font-size: $font-size-5;
+  line-height: $line-height-3;
+  color: $color-default-white;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+
+  @media (max-width: 769px) {
+    margin-bottom: 0;
+  }
+}
+
+.page-footer a {
+  color: $color-footer-nav-item;
 }
