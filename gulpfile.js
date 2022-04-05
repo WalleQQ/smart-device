@@ -28,7 +28,7 @@ const css = () => {
         }),
       ])
     )
-    .pipe(gcmq()) // выключите, если в проект импортятся шрифты через ссылку на внешний источник
+    .pipe(gcmq())
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -66,7 +66,7 @@ const sprite = () => {
     .src("source/img/**/*.svg")
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite_auto.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 };
 
 const copySvg = () => {
@@ -104,7 +104,7 @@ const clean = () => {
 const syncServer = () => {
   server.init({
     server: "build/",
-    index: "sitemap.html",
+    index: "index.html",
     notify: false,
     open: true,
     cors: true,
