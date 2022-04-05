@@ -1,0 +1,54 @@
+.accordion {
+  display: none;
+
+  @media (max-width: 769px) {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+  }
+}
+
+.accordion details {
+  padding: 20px 25px;
+}
+
+.accordion summary {
+  position: relative;
+  padding: 2px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 7px;
+    width: 1px;
+    height: 15px;
+    background-color: $color-shades-of-silver;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 15px;
+    height: 1px;
+    background-color: $color-shades-of-silver;
+  }
+}
+
+.accordion details[open] h3 {
+  @media (max-width: 769px) {
+    margin-bottom: 20px;
+  }
+}
+
+.accordion details[open] summary::before {
+  display: none;
+}
+
+.accordion summary::marker {
+  content: '';
+}
