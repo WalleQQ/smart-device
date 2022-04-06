@@ -1,0 +1,129 @@
+.questions {
+  position: relative;
+  background-color: $color-background-form-deep-sky-blue;
+  padding: 170px 10px 250px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/icons/Polygon.svg');
+    background-repeat: no-repeat;
+    background-position: 0 800%;
+  }
+
+  @media (max-width: 1221px) {
+    padding: 50px 0 130px 0;
+    &::before {
+      display: none;
+    }
+  }
+
+  @media (max-width: 1221px) {
+    padding: 50px 0 90px 0;
+  }
+}
+
+.questions .wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 75px;
+    left: 0;
+    z-index: 1;
+    width: 510px;
+    height: 285px;
+    background-image: image-set(
+      url('../img/form/form-plane.png') 1x,
+      url('../img/form/form-plane@2x.png') 2x,
+      url('../img/form/form-plane.webp') 1x,
+      url('../img/form/form-plane@2x.webp') 2x
+    );
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: inherit;
+  }
+
+  @media (max-width: 1221px) {
+    align-items: stretch;
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.questions__form-wrapper {
+  max-width: 580px;
+
+  @media (max-width: 1221px) {
+    max-width: 100%;
+  }
+}
+
+.questions__form-wrapper h2 {
+  font-family: $ff-roboto-condensed-regular;
+  font-size: $font-size-10;
+  line-height: $line-height-9;
+  margin-bottom: 15px;
+
+  @media (max-width: 769px) {
+    font-size: $font-size-4;
+    line-height: 140.62%;
+    margin-bottom: 20px;
+  }
+}
+
+.questions__form-wrapper p {
+  margin-bottom: 35px;
+
+  @media (max-width: 769px) {
+    font-size: $font-size-3;
+    line-height: 134.4%;
+    margin-bottom: 40px;
+  }
+}
+
+.questions__form-wrapper form {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  column-gap: 30px;
+
+  @media (max-width: 769px) {
+    column-gap: 20px;
+    flex-direction: column;
+  }
+}
+
+.questions__form-wrapper input {
+  width: 47.4%;
+  margin-bottom: 20px;
+
+  @media (max-width: 769px) {
+    width: 100%;
+  }
+}
+
+.questions__form-wrapper textarea {
+  width: 100%;
+  min-height: 155px;
+  margin-bottom: 30px;
+}
+
+.questions__form-wrapper input[type='submit'] {
+  padding: 15px 25px;
+  max-width: 265px;
+}
+
+.questions__form-wrapper label[for='checkbox'] {
+  max-width: 260px;
+}

@@ -1,22 +1,17 @@
 .page-footer {
   padding: 53px 0;
   background-color: $color-black-pearl;
-
-  @media (max-width: 1221px) {
-    padding: 50px;
-  }
-
-  @media (max-width: 767px) {
-    padding: 35px 0;
-  }
 }
 
-.page-footer .wrapper {
+.page-footer__wrapper {
+  max-width: $vp-1222;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 325px 422px 1fr;
   gap: 50px;
 
   @media (max-width: 1221px) {
+    padding: 50px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -25,6 +20,7 @@
   }
 
   @media (max-width: 769px) {
+    padding: 35px 0;
     display: grid;
     grid-template-columns: 1fr;
   }

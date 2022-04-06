@@ -73,6 +73,8 @@ form input[type='checkbox']:checked + label[for='checkbox'] {
 }
 
 form input[type='submit'] {
+  cursor: pointer;
+  font-family: $ff-roboto-condensed-bold;
   background-color: $color-black-pearl;
   padding: 15px 60px;
   text-transform: uppercase;

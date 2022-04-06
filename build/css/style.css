@@ -438,12 +438,17 @@ template {
   font-family: "PT-Mono", "Arial", sans-serif;
   color: #f2f5f7;
   scroll-behavior: smooth;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
 .page-body {
+  width: 100%;
   height: 100%;
   display: -ms-grid;
   display: grid;
@@ -584,6 +589,10 @@ button,
   margin: 0 auto;
 }
 
+.page-body__isOpenMenu {
+  position: fixed;
+}
+
 .page-header {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: -o-linear-gradient(top, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
@@ -704,6 +713,7 @@ button,
 .modal {
   display: none;
   position: fixed;
+  z-index: 2;
   top: 146px;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -890,6 +900,8 @@ form input[type='checkbox']:checked + label[for='checkbox']::after {
 }
 
 form input[type='submit'] {
+  cursor: pointer;
+  font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
   background-color: #041827;
   padding: 15px 60px;
   text-transform: uppercase;
@@ -913,7 +925,9 @@ form input[type='submit'] {
   background-color: #041827;
 }
 
-.page-footer .wrapper {
+.page-footer__wrapper {
+  max-width: 1222px;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 325px 422px 1fr;
@@ -1094,7 +1108,7 @@ form input[type='submit'] {
 
 .promo {
   position: relative;
-  background-color: #041827;
+  background-color: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%);
   background-image: -webkit-image-set(url("../img/promo/promo-background.jpg") 1x, url("../img/promo/promo-background@2x.jpg") 2x, url("../img/promo/promo-background.webp") 1x, url("../img/promo/promo-background@2x.webp") 2x);
   background-image: image-set(url("../img/promo/promo-background.jpg") 1x, url("../img/promo/promo-background@2x.jpg") 2x, url("../img/promo/promo-background.webp") 1x, url("../img/promo/promo-background@2x.webp") 2x);
   background-position: 40% 0;
@@ -1161,6 +1175,7 @@ form input[type='submit'] {
 }
 
 .avantages__item {
+  cursor: pointer;
   padding: 40px 45px 35px 45px;
   position: relative;
   max-width: 596px;
@@ -1315,6 +1330,7 @@ form input[type='submit'] {
   content: '';
   z-index: 2;
   position: absolute;
+  cursor: pointer;
   bottom: 0;
   right: 0;
   width: 60px;
@@ -1346,6 +1362,103 @@ form input[type='submit'] {
   height: 100%;
 }
 
+.questions {
+  position: relative;
+  background-color: #00b3ff;
+  padding: 170px 10px 250px 0;
+}
+
+.questions::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/icons/Polygon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 800%;
+}
+
+.questions .wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.questions .wrapper::before {
+  content: '';
+  position: absolute;
+  top: 75px;
+  left: 0;
+  z-index: 1;
+  width: 510px;
+  height: 285px;
+  background-image: -webkit-image-set(url("../img/form/form-plane.png") 1x, url("../img/form/form-plane@2x.png") 2x, url("../img/form/form-plane.webp") 1x, url("../img/form/form-plane@2x.webp") 2x);
+  background-image: image-set(url("../img/form/form-plane.png") 1x, url("../img/form/form-plane@2x.png") 2x, url("../img/form/form-plane.webp") 1x, url("../img/form/form-plane@2x.webp") 2x);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: inherit;
+}
+
+.questions__form-wrapper {
+  max-width: 580px;
+}
+
+.questions__form-wrapper h2 {
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  margin-bottom: 15px;
+}
+
+.questions__form-wrapper p {
+  margin-bottom: 35px;
+}
+
+.questions__form-wrapper form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+}
+
+.questions__form-wrapper input {
+  width: 47.4%;
+  margin-bottom: 20px;
+}
+
+.questions__form-wrapper textarea {
+  width: 100%;
+  min-height: 155px;
+  margin-bottom: 30px;
+}
+
+.questions__form-wrapper input[type='submit'] {
+  padding: 15px 25px;
+  max-width: 265px;
+}
+
+.questions__form-wrapper label[for='checkbox'] {
+  max-width: 260px;
+}
+
 @media (max-width: 1221px) {
   .wrapper {
     padding: 0 50px;
@@ -1370,11 +1483,8 @@ form input[type='submit'] {
     display: none;
   }
 
-  .page-footer {
+  .page-footer__wrapper {
     padding: 50px;
-  }
-
-  .page-footer .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1458,6 +1568,32 @@ form input[type='submit'] {
     max-width: 100%;
     height: 250px;
   }
+
+  .questions {
+    padding: 50px 0 130px 0;
+  }
+
+  .questions::before {
+    display: none;
+  }
+
+  .questions {
+    padding: 50px 0 90px 0;
+  }
+
+  .questions .wrapper {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .questions .wrapper::before {
+    display: none;
+  }
+
+  .questions__form-wrapper {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 1221px) and (max-width: 769px) {
@@ -1521,7 +1657,8 @@ form input[type='submit'] {
     padding-top: 5px;
   }
 
-  .page-footer .wrapper {
+  .page-footer__wrapper {
+    padding: 35px 0;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -1676,10 +1813,30 @@ form input[type='submit'] {
     font-size: 18px;
     line-height: 30px;
   }
-}
 
-@media (max-width: 767px) {
-  .page-footer {
-    padding: 35px 0;
+  .questions__form-wrapper h2 {
+    font-size: 30px;
+    line-height: 140.62%;
+    margin-bottom: 20px;
+  }
+
+  .questions__form-wrapper p {
+    font-size: 14px;
+    line-height: 134.4%;
+    margin-bottom: 40px;
+  }
+
+  .questions__form-wrapper form {
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .questions__form-wrapper input {
+    width: 100%;
   }
 }
