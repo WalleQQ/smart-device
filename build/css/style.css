@@ -1129,7 +1129,7 @@ form input[type='submit'] {
   padding: 15px 25px;
   font-size: 18px;
   line-height: 18px;
-  max-width: 360px;
+  max-width: 378px;
 }
 
 .promo__content-button--mobile {
@@ -1211,9 +1211,67 @@ form input[type='submit'] {
   color: #f2f5f7;
 }
 
+.about-company {
+  padding-bottom: 120px;
+}
+
+.about-company__content-wrapper {
+  position: relative;
+  padding-left: 250px;
+}
+
+.about-company__content-wrapper::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 150px;
+  height: 320px;
+  background-image: -webkit-image-set(url("../img/about-company/2022.png") 1x, url("../img/about-company/2022@2x.png") 2x, url("../img/about-company/2022.webp") 1x, url("../img/about-company/2022@2x.webp") 2x);
+  background-image: image-set(url("../img/about-company/2022.png") 1x, url("../img/about-company/2022@2x.png") 2x, url("../img/about-company/2022.webp") 1x, url("../img/about-company/2022@2x.webp") 2x);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-company__hidden-content {
+  display: none;
+}
+
+.about-company__hidden-content--isShow {
+  display: block;
+}
+
+.about-company h2 {
+  font-family: "Roboto-Condensed-Regular", "Arial", sans-serif;
+  color: #041827;
+  font-size: 36px;
+  line-height: 51px;
+  margin-bottom: 15px;
+}
+
+.about-company p {
+  color: #041827;
+  max-width: 970px;
+  margin-bottom: 20px;
+}
+
+.about-company__button {
+  color: #00b2ff;
+  background: inherit;
+  border: 1px solid #00b2ff;
+  max-width: 180px;
+  width: 100%;
+  padding: 14px 12px;
+}
+
 @media (max-width: 1221px) {
+  .wrapper {
+    padding: 0 50px;
+  }
+
   .page-header {
-    padding: 20px 70px 25px 50px;
+    padding: 20px 20px 25px 0;
   }
 
   .main-nav__contacts-wrapper {
@@ -1288,11 +1346,7 @@ form input[type='submit'] {
   }
 
   .avantages {
-    padding: 80px 50px 80px 50px;
-  }
-
-  .avantages {
-    padding: 50px 25px 50px 25px;
+    padding: 80px 0;
   }
 
   .avantages__item {
@@ -1301,6 +1355,10 @@ form input[type='submit'] {
 
   .avantages__item h3 {
     font-size: 24px;
+  }
+
+  .about-company__content-wrapper {
+    padding-left: 180px;
   }
 }
 
@@ -1322,7 +1380,7 @@ form input[type='submit'] {
   }
 
   .promo {
-    padding: 180px 50px 205px 50px;
+    padding: 180px 0 205px 0;
   }
 
   .promo__content {
@@ -1333,11 +1391,23 @@ form input[type='submit'] {
     font-size: 64px;
     line-height: 75px;
   }
+
+  .promo__content-button {
+    line-height: 21px;
+  }
+
+  .about-company {
+    padding-bottom: 80px;
+  }
 }
 
 @media (max-width: 769px) {
+  .wrapper {
+    padding: 0 25px;
+  }
+
   .page-header {
-    padding: 15px 36px 20px 26px;
+    padding: 15px 11px 20px 0;
   }
 
   .main-nav__logo-link svg {
@@ -1403,7 +1473,7 @@ form input[type='submit'] {
   }
 
   .promo {
-    padding: 150px 25px 190px 25px;
+    padding: 150px 0 190px 0;
   }
 
   .promo__content h2 {
@@ -1428,6 +1498,10 @@ form input[type='submit'] {
     display: block;
   }
 
+  .avantages {
+    padding: 50px 0;
+  }
+
   .avantages__item {
     padding: 30px 30px 35px 30px;
     max-width: 270px;
@@ -1444,6 +1518,31 @@ form input[type='submit'] {
 
   .avantages__item p {
     font-size: 14px;
+  }
+
+  .about-company__content-wrapper {
+    padding-left: 0;
+  }
+
+  .about-company__content-wrapper::before {
+    display: none;
+  }
+
+  .about-company h2 {
+    font-size: 28px;
+    line-height: 140.62%;
+  }
+
+  .about-company p {
+    font-size: 14px;
+    line-height: 134.4%;
+  }
+
+  .about-company__button {
+    max-width: 160px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 8px 15px;
   }
 }
 
