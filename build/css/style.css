@@ -1129,6 +1129,7 @@ form input[type='submit'] {
   padding: 15px 25px;
   font-size: 18px;
   line-height: 18px;
+  max-width: 360px;
 }
 
 .promo__content-button--mobile {
@@ -1278,6 +1279,7 @@ form input[type='submit'] {
   }
 
   .address {
+    max-width: 100%;
     padding-left: 23px;
   }
 
@@ -1287,6 +1289,10 @@ form input[type='submit'] {
 
   .avantages {
     padding: 80px 50px 80px 50px;
+  }
+
+  .avantages {
+    padding: 50px 25px 50px 25px;
   }
 
   .avantages__item {
@@ -1376,6 +1382,7 @@ form input[type='submit'] {
   }
 
   .address {
+    max-width: 100%;
     margin-left: 0;
     padding-left: 0;
   }
@@ -1419,6 +1426,24 @@ form input[type='submit'] {
 
   .promo__content-button--mobile {
     display: block;
+  }
+
+  .avantages__item {
+    padding: 30px 30px 35px 30px;
+    max-width: 270px;
+  }
+
+  .avantages__item svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .avantages__item h3 {
+    font-size: 20px;
+  }
+
+  .avantages__item p {
+    font-size: 14px;
   }
 }
 
