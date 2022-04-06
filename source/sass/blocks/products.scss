@@ -1,0 +1,120 @@
+.products {
+  padding-top: 70px;
+  padding-bottom: 140px;
+  background-color: $color-black-pearl;
+
+  @media (max-width: 1221px) {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+
+  @media (max-width: 769px) {
+    padding-top: 50px;
+    padding-bottom: 86px;
+  }
+}
+
+.products__title {
+  display: block;
+
+  @media (max-width: 769px) {
+    display: none;
+  }
+}
+
+.products__mobile-title {
+  display: none;
+
+  @media (max-width: 769px) {
+    display: block;
+  }
+}
+
+.products h2 {
+  font-family: $ff-roboto-condensed-regular;
+  color: $color-default-white;
+  font-size: $font-size-10;
+  line-height: $line-height-9;
+  margin-bottom: 50px;
+
+  @media (max-width: 769px) {
+    font-size: $font-size-14;
+    line-height: 140.62%;
+    margin-bottom: 40px;
+  }
+}
+
+.products__list {
+  @include list-zeroing;
+  display: flex;
+  column-gap: 86px;
+  row-gap: 30px;
+
+  @media (max-width: 1221px) {
+    flex-direction: column;
+  }
+}
+
+.products__item {
+  position: relative;
+  box-sizing: border-box;
+  background-color: inherit;
+  max-width: 350px;
+  width: 100%;
+  height: 650px;
+  padding: 50px 40px;
+
+  &::after {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-image: url('../img/icons/arrow.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: $color-background-deep-sky-blue;
+  }
+
+  @media (max-width: 1221px) {
+    max-width: 100%;
+    height: 250px;
+  }
+
+  @media (max-width: 769px) {
+    padding: 30px 30px;
+
+    &::after {
+      width: 40px;
+      height: 40px;
+      background-image: url('../img/icons/arrow-mobile.svg');
+    }
+  }
+}
+
+.products__item-link h3 {
+  position: relative;
+  z-index: 2;
+  font-family: $ff-roboto-condensed-regular;
+  color: $color-default-white;
+  font-size: $font-size-13;
+  line-height: $line-height-10;
+  max-width: 160px;
+
+  @media (max-width: 769px) {
+    font-size: $font-size-9;
+    line-height: $line-height-10;
+  }
+}
+
+.products__item-link img {
+  position: absolute;
+  object-fit: cover;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
