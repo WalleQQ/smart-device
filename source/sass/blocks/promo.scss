@@ -14,11 +14,11 @@
   padding: 295px 0 280px 0;
 
   @media (max-width: 1121px) {
-    padding: 180px 50px 205px 50px;
+    padding: 180px 0 205px 0;
   }
 
   @media (max-width: 769px) {
-    padding: 150px 25px 190px 25px;
+    padding: 150px 0 190px 0;
   }
 }
 
@@ -66,10 +66,14 @@
   padding: 15px 25px;
   font-size: $font-size-9;
   line-height: $font-size-9;
-  max-width: 360px;
+  max-width: 378px;
 
   &--mobile {
     display: none;
+  }
+
+  @media (max-width: 1121px) {
+    line-height: $line-height-7;
   }
 
   @media (max-width: 769px) {
