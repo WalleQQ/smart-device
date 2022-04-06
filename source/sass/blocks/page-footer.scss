@@ -14,7 +14,6 @@
 .page-footer .wrapper {
   display: grid;
   grid-template-columns: 325px 422px 1fr;
-  align-items: start;
   gap: 50px;
 
   @media (max-width: 1221px) {

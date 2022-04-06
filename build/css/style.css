@@ -591,6 +591,7 @@ button,
   padding: 25px 0 30px 0;
   width: 100%;
   position: fixed;
+  z-index: 2;
 }
 
 .logo-link {
@@ -917,9 +918,6 @@ form input[type='submit'] {
   display: grid;
   -ms-grid-columns: 325px 422px 1fr;
   grid-template-columns: 325px 422px 1fr;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: start;
   gap: 50px;
 }
 
@@ -1094,6 +1092,124 @@ form input[type='submit'] {
   content: '';
 }
 
+.promo {
+  position: relative;
+  background-color: #041827;
+  background-image: -webkit-image-set(url("../img/promo/promo-background.jpg") 1x, url("../img/promo/promo-background@2x.jpg") 2x, url("../img/promo/promo-background.webp") 1x, url("../img/promo/promo-background@2x.webp") 2x);
+  background-image: image-set(url("../img/promo/promo-background.jpg") 1x, url("../img/promo/promo-background@2x.jpg") 2x, url("../img/promo/promo-background.webp") 1x, url("../img/promo/promo-background@2x.webp") 2x);
+  background-position: 40% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 295px 0 280px 0;
+}
+
+.promo__content {
+  padding-left: 125px;
+}
+
+.promo__content h2 {
+  font-family: "Roboto-Condensed-Bold", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 80px;
+  line-height: 94px;
+  margin-bottom: 40px;
+}
+
+.promo__content p {
+  font-size: 22px;
+  line-height: 155%;
+  margin-bottom: 40px;
+  max-width: 685px;
+}
+
+.promo__content-button {
+  background-color: #00b2ff;
+  padding: 15px 25px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.promo__content-button--mobile {
+  display: none;
+}
+
+.avantages {
+  padding-top: 120px;
+  padding-bottom: 125px;
+  background-color: inherit;
+}
+
+.avantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.avantages__item {
+  padding: 40px 45px 35px 45px;
+  position: relative;
+  max-width: 596px;
+  border: 1px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.avantages__item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background-color: #00b2ff;
+}
+
+.avantages__item svg {
+  width: 35px;
+  height: 35px;
+  fill: #00b2ff;
+  margin-bottom: 20px;
+}
+
+.avantages__item h3 {
+  font-size: 25px;
+  line-height: 140%;
+  color: #00b2ff;
+  margin-bottom: 15px;
+}
+
+.avantages__item p {
+  color: #041827;
+  line-height: 135%;
+}
+
+.avantages__item:hover {
+  background-color: #00b2ff;
+}
+
+.avantages__item:hover svg {
+  fill: #f2f5f7;
+}
+
+.avantages__item:hover h3,
+.avantages__item:hover p {
+  color: #f2f5f7;
+}
+
 @media (max-width: 1221px) {
   .page-header {
     padding: 20px 70px 25px 50px;
@@ -1168,6 +1284,18 @@ form input[type='submit'] {
   .address address {
     margin-bottom: 10px;
   }
+
+  .avantages {
+    padding: 80px 50px 80px 50px;
+  }
+
+  .avantages__item {
+    max-width: 320px;
+  }
+
+  .avantages__item h3 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 1221px) and (max-width: 769px) {
@@ -1185,6 +1313,19 @@ form input[type='submit'] {
 @media (max-width: 1121px) {
   .socials__logo-link {
     margin-bottom: 35px;
+  }
+
+  .promo {
+    padding: 180px 50px 205px 50px;
+  }
+
+  .promo__content {
+    padding-left: 0;
+  }
+
+  .promo__content h2 {
+    font-size: 64px;
+    line-height: 75px;
   }
 }
 
@@ -1223,6 +1364,7 @@ form input[type='submit'] {
 
   .socials__list {
     margin-bottom: 30px;
+    padding-left: 0;
   }
 
   .nav-section {
@@ -1251,6 +1393,32 @@ form input[type='submit'] {
 
   .accordion details[open] h3 {
     margin-bottom: 20px;
+  }
+
+  .promo {
+    padding: 150px 25px 190px 25px;
+  }
+
+  .promo__content h2 {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .promo__content p {
+    font-size: 14px;
+    margin-bottom: 50px;
+  }
+
+  .promo__content-button {
+    display: none;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 10px 30px;
+  }
+
+  .promo__content-button--mobile {
+    display: block;
   }
 }
 
