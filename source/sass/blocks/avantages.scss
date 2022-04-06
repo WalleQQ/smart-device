@@ -1,0 +1,76 @@
+.avantages {
+  padding-top: 120px;
+  padding-bottom: 125px;
+  background-color: inherit;
+
+  @media (max-width: 1221px) {
+    padding: 80px 50px 80px 50px;
+  }
+}
+
+.avantages__list {
+  @include list-zeroing;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.avantages__item {
+  padding: 40px 45px 35px 45px;
+  position: relative;
+  max-width: 596px;
+  border: 1px solid $color-shades-of-whishper;
+  box-sizing: border-box;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5px;
+    background-color: $color-background-deep-sky-blue;
+  }
+
+  @media (max-width: 1221px) {
+    max-width: 320px;
+  }
+}
+
+.avantages__item svg {
+  width: 35px;
+  height: 35px;
+  fill: $color-background-deep-sky-blue;
+  margin-bottom: 20px;
+}
+
+.avantages__item h3 {
+  font-size: $font-size-11;
+  line-height: 140%;
+  color: $color-background-deep-sky-blue;
+  margin-bottom: 15px;
+
+  @media (max-width: 1221px) {
+    font-size: $font-size-12;
+  }
+}
+
+.avantages__item p {
+  color: $color-black-pearl;
+  line-height: 135%;
+}
+
+.avantages__item:hover {
+  background-color: $color-background-deep-sky-blue;
+}
+
+.avantages__item:hover svg {
+  fill: $color-alice-blue;
+}
+
+.avantages__item:hover h3,
+.avantages__item:hover p {
+  color: $color-alice-blue;
+}

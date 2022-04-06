@@ -1,0 +1,84 @@
+.promo {
+  position: relative;
+  background-color: $color-black-pearl;
+  background-image: image-set(
+    url('../img/promo/promo-background.jpg') 1x,
+    url('../img/promo/promo-background@2x.jpg') 2x,
+    url('../img/promo/promo-background.webp') 1x,
+    url('../img/promo/promo-background@2x.webp') 2x
+  );
+  background-position: 40% 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  padding: 295px 0 280px 0;
+
+  @media (max-width: 1121px) {
+    padding: 180px 50px 205px 50px;
+  }
+
+  @media (max-width: 769px) {
+    padding: 150px 25px 190px 25px;
+  }
+}
+
+.promo__content {
+  padding-left: 125px;
+
+  @media (max-width: 1121px) {
+    padding-left: 0;
+  }
+}
+
+.promo__content h2 {
+  font-family: $ff-roboto-condensed-bold;
+  text-transform: uppercase;
+  font-size: $font-size-6;
+  line-height: $line-height-5;
+  margin-bottom: 40px;
+
+  @media (max-width: 1121px) {
+    font-size: $font-size-8;
+    line-height: $line-height-6;
+  }
+
+  @media (max-width: 769px) {
+    font-size: $font-size-10;
+    line-height: $line-height-8;
+    margin-bottom: 20px;
+  }
+}
+
+.promo__content p {
+  font-size: $font-size-7;
+  line-height: 155%;
+  margin-bottom: 40px;
+  max-width: 685px;
+
+  @media (max-width: 769px) {
+    font-size: $font-size-3;
+    margin-bottom: 50px;
+  }
+}
+
+.promo__content-button {
+  background-color: $color-background-deep-sky-blue;
+  padding: 15px 25px;
+  font-size: $font-size-9;
+  line-height: $font-size-9;
+
+  &--mobile {
+    display: none;
+  }
+
+  @media (max-width: 769px) {
+    display: none;
+    font-size: $font-size-3;
+    line-height: $font-size-3;
+    padding: 10px 30px;
+
+    &--mobile {
+      display: block;
+    }
+  }
+}
