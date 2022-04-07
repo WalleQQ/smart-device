@@ -866,13 +866,15 @@ form input[type='checkbox'] {
   opacity: 0;
 }
 
-form label[for='checkbox'] {
+form label[for='checkbox'],
+form label[for='modalCheckbox'] {
   position: relative;
   padding-left: 25px;
   cursor: pointer;
 }
 
-form label[for='checkbox']::before {
+form label[for='checkbox']::before,
+form label[for='modalCheckbox']::before {
   content: '';
   position: absolute;
   left: 0;
@@ -885,7 +887,8 @@ form label[for='checkbox']::before {
   background: url("../img/icons/checkbox.svg") 50% 50% no-repeat;
 }
 
-form input[type='checkbox']:checked + label[for='checkbox']::after {
+form input[type='checkbox']:checked + label[for='checkbox']::after,
+form input[type='checkbox']:checked + label[for='modalCheckbox']::after {
   content: '';
   position: absolute;
   z-index: 100;
