@@ -41,7 +41,8 @@ form input[type='checkbox'] {
   opacity: 0;
 }
 
-form label[for='checkbox'] {
+form label[for='checkbox'],
+form label[for='modalCheckbox'] {
   position: relative;
   padding-left: 25px;
   cursor: pointer;
@@ -58,7 +59,8 @@ form label[for='checkbox'] {
   }
 }
 
-form input[type='checkbox']:checked + label[for='checkbox'] {
+form input[type='checkbox']:checked + label[for='checkbox'],
+form input[type='checkbox']:checked + label[for='modalCheckbox'] {
   &::after {
     content: '';
     position: absolute;

@@ -1,6 +1,9 @@
 import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
-import './modules/modals/modal.js';
+import './modules/modals/showModal.js';
+import './modules/form/form.js';
+import './modules/about-company/about-company.js';
+import './modules/accordion/accordion.js';
 
 // ---------------------------------
 
