@@ -29,7 +29,7 @@
   }
 
   @media (max-width: 1221px) {
-    padding-left: 180px;
+    padding-left: 175px;
   }
 
   @media (max-width: 769px) {
@@ -54,9 +54,14 @@
   color: $color-black-pearl;
   font-size: $font-size-10;
   line-height: $line-height-9;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+
+  @media (max-width: 1221px) {
+    margin-bottom: 6px;
+  }
 
   @media (max-width: 769px) {
+    margin-bottom: 10px;
     font-size: $font-size-14;
     line-height: 140.62%;
   }
@@ -64,8 +69,19 @@
 
 .about-company p {
   color: $color-black-pearl;
+  line-height: 22px;
   max-width: 970px;
   margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 38px;
+  }
+
+  @media (max-width: 1221px) {
+    &:last-of-type {
+      margin-bottom: 15px;
+    }
+  }
 
   @media (max-width: 769px) {
     font-size: $font-size-3;

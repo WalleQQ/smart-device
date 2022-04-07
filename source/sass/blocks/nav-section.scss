@@ -1,12 +1,15 @@
 .nav-section {
   max-width: 470px;
+  margin-top: 8px;
 
   @media (max-width: 1221px) {
     max-width: 202px;
+    margin-top: 0;
   }
 
   @media (max-width: 769px) {
     max-width: 100%;
+    margin-top: 0;
   }
 }
 
