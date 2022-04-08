@@ -148,6 +148,19 @@
   }
 }
 
+.questions__form-wrapper input[type='checkbox'] {
+  left: 315px;
+
+  @media (max-width: 1221px) {
+    left: 350px;
+  }
+
+  @media (max-width: 769px) {
+    bottom: -15px;
+    left: -105px;
+  }
+}
+
 .questions__form-wrapper label[for='checkbox'] {
   max-width: 260px;
   margin-top: 19px;

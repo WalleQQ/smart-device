@@ -1474,6 +1474,10 @@ form input[type='submit'] {
   max-width: 265px;
 }
 
+.questions__form-wrapper input[type='checkbox'] {
+  left: 315px;
+}
+
 .questions__form-wrapper label[for='checkbox'] {
   max-width: 260px;
   margin-top: 19px;
@@ -1654,6 +1658,10 @@ form input[type='submit'] {
 
   .questions__form-wrapper input[type='submit'] {
     padding: 12px 25px;
+  }
+
+  .questions__form-wrapper input[type='checkbox'] {
+    left: 350px;
   }
 
   .questions__form-wrapper label[for='checkbox'] {
@@ -1937,6 +1945,11 @@ form input[type='submit'] {
   .questions__form-wrapper textarea {
     min-height: 180px;
     margin-bottom: 30px;
+  }
+
+  .questions__form-wrapper input[type='checkbox'] {
+    bottom: -15px;
+    left: -105px;
   }
 
   .questions__form-wrapper label[for='checkbox'] {
