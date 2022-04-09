@@ -1,12 +1,10 @@
 @import 'vendor/normalize';
-
 @import 'variables';
 @import 'global/fonts';
 @import 'global/reboot';
 @import 'global/utils';
 @import 'global/wrapper';
 @import 'global/mixins';
-
 @import 'blocks/page-body';
 @import 'blocks/page-header';
 @import 'blocks/logo';
@@ -27,3 +25,5 @@
 @import 'blocks/about-company';
 @import 'blocks/products';
 @import 'blocks/questions';
+@import 'blocks/success';
+@import 'blocks/error';

@@ -1,10 +1,19 @@
-import { isEscapeKey } from '../../utils.js';
+import {isEscapeKey} from '../../utils.js';
+import {nameInputs} from '../form/form.js';
 
 const openModalButton = document.querySelector('.main-nav__button');
 const closeModalButton = document.querySelector('.modal__close-button');
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const pageBody = document.querySelector('.page-body');
+
+
+const onFocusNameInputs = () => {
+  nameInputs.forEach((nameInput) => {
+    nameInput.focus();
+  });
+};
+
 
 const onShowModalEscKeydown = (evt) => {
   if (isEscapeKey(evt)) {
@@ -33,6 +42,7 @@ export const closeModal = () => {
 
 openModalButton.addEventListener('click', () => {
   showModal();
+  onFocusNameInputs();
 });
 
 closeModalButton.addEventListener('click', () => {

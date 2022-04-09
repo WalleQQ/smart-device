@@ -4,7 +4,8 @@
   font-family: 'PT-Mono';
 
   font-display: swap;
-  src: local('PT-Mono'), url('../fonts/PT-Mono_Regular.woff2'),
+  src: local('PT-Mono'),
+    url('../fonts/PT-Mono_Regular.woff2'),
     url('../fonts/PT-Mono_Regular.woff');
 }
 
@@ -14,7 +15,8 @@
   font-family: 'Roboto-Medium';
 
   font-display: swap;
-  src: local('Roboto-Medium'), url('../fonts/roboto-medium.woff2'),
+  src: local('Roboto-Medium'),
+    url('../fonts/roboto-medium.woff2'),
     url('../fonts/roboto-medium.woff');
 }
 

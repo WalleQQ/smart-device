@@ -1,11 +1,10 @@
 const accordionDetails = document.querySelectorAll('details');
-const accordionSummery = document.querySelectorAll('summary');
 
-function handleClickOnDetails() {
+function handleClickOnDetails(evt) {
   let detailsOpened = document.querySelectorAll('details[open]');
 
   for (const item of detailsOpened) {
-    if (this != item) {
+    if (evt.target.current !== item) {
       item.removeAttribute('open');
     }
   }
