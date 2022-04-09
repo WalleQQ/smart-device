@@ -1,8 +1,9 @@
-import { sendData } from '../api/api.js';
+import {sendData} from '../api/api.js';
 import IMask from 'imask';
 
+const phoneMask = IMask;
 const forms = document.querySelectorAll('form');
-const nameInputs = document.querySelectorAll('input[name=name]');
+export const nameInputs = document.querySelectorAll('input[name=name]');
 const telInputs = document.querySelectorAll('input[type=tel]');
 
 const maskOptions = {
@@ -15,7 +16,7 @@ nameInputs.forEach((nameInput) => {
     const nameRegExp = /^[a-zA-Zа-яА-Я]+/g;
     if (nameRegExp.test(value) === false) {
       nameInput.setCustomValidity(
-        'Введите имя русскими или английскими буквами'
+          'Введите имя русскими или английскими буквами'
       );
     } else {
       nameInput.setCustomValidity('');
@@ -25,7 +26,7 @@ nameInputs.forEach((nameInput) => {
 });
 
 telInputs.forEach((telInput) => {
-  IMask(telInput, maskOptions);
+  phoneMask(telInput, maskOptions);
   telInput.addEventListener('input', () => {
     if (telInput.value.length < 16) {
       telInput.setCustomValidity('Введите номера телефона');
