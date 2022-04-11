@@ -1725,6 +1725,10 @@ form input[type='submit'] {
     min-height: 360px;
   }
 
+  .avantages__item svg {
+    margin-bottom: 14px;
+  }
+
   .avantages__item h3 {
     font-size: 24px;
     margin-bottom: 10px;
@@ -1977,7 +1981,7 @@ form input[type='submit'] {
   .avantages__item {
     padding: 30px 30px 35px 30px;
     max-width: 270px;
-    min-height: 340px;
+    min-height: 339px;
   }
 
   .avantages__item svg {
@@ -1988,7 +1992,7 @@ form input[type='submit'] {
 
   .avantages__item h3 {
     font-size: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
   }
 
   .avantages__item p {
