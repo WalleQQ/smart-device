@@ -3,12 +3,12 @@
   padding-bottom: 140px;
   background-color: $color-black-pearl;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     padding-top: 60px;
     padding-bottom: 75px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     padding-top: 50px;
     padding-bottom: 86px;
   }
@@ -17,7 +17,7 @@
 .products__title {
   display: block;
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -25,7 +25,7 @@
 .products__mobile-title {
   display: none;
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     display: block;
   }
 }
@@ -37,11 +37,11 @@
   line-height: $line-height-9;
   margin-bottom: 50px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     margin-bottom: 30px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     font-size: $font-size-14;
     max-width: 260px;
     line-height: 140.62%;
@@ -56,7 +56,7 @@
   column-gap: 86px;
   row-gap: 30px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     flex-direction: column;
   }
 }
@@ -68,7 +68,6 @@
   max-width: 350px;
   width: 100%;
   height: 650px;
-  padding: 50px 40px;
 
   &::after {
     content: '';
@@ -85,13 +84,14 @@
     background-color: $color-background-deep-sky-blue;
   }
 
-  @media (max-width: 1221px) {
+
+  @media (max-width: 1023px) {
     max-width: 100%;
     height: 250px;
     padding: 39px 44px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     padding: 26px 30px;
 
     &::after {
@@ -99,6 +99,17 @@
       height: 40px;
       background-image: url('../img/icons/arrow-mobile.svg');
     }
+  }
+}
+
+.products__item-link {
+  position: absolute;
+  padding: 50px 40px;
+  width: 100%;
+  height: 100%;
+
+  &:focus {
+    outline: 1px solid $color-default-white;
   }
 }
 
@@ -111,7 +122,7 @@
   line-height: $line-height-10;
   max-width: 160px;
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     font-size: $font-size-9;
     line-height: $line-height-10;
   }

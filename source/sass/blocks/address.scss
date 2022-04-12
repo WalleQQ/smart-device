@@ -3,13 +3,13 @@
   margin-left: 28px;
   margin-top: 8px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     max-width: 319px;
     padding-left: 0;
     margin-top: 0;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     max-width: 100%;
     margin-top: 0;
     margin-left: 0;
@@ -20,7 +20,7 @@
 .address__content-wrapper {
   display: block;
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     display: none;
   }
 }
@@ -30,7 +30,7 @@
   color: $color-footer-nav-item;
   margin-bottom: 6px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     margin-bottom: 10px;
   }
 }
@@ -48,7 +48,7 @@
 
 .address address,
 .address__contacts-item-link {
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     font-size: 14px;
     line-height: 135%;
   }

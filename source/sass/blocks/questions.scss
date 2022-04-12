@@ -12,10 +12,10 @@
     height: 100%;
     background-image: url('../img/icons/Polygon.svg');
     background-repeat: no-repeat;
-    background-position: 0 800%;
+    background-position: 0 99%;
   }
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     padding: 50px 0 105px 0;
 
     &::before {
@@ -23,7 +23,7 @@
     }
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     padding: 50px 0 90px 0;
   }
 }
@@ -54,7 +54,7 @@
     background-color: inherit;
   }
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     align-items: stretch;
 
     &::before {
@@ -67,7 +67,7 @@
   max-width: 580px;
   margin-right: 9px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     max-width: 100%;
     margin-right: 0;
   }
@@ -79,11 +79,11 @@
   line-height: $line-height-9;
   margin-bottom: 10px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     margin-bottom: 5px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     font-size: $font-size-4;
     line-height: 140.62%;
     margin-bottom: 4px;
@@ -93,11 +93,11 @@
 .questions__form-wrapper p {
   margin-bottom: 35px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     margin-bottom: 25px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     font-size: $font-size-3;
     line-height: 134.4%;
     margin-bottom: 29px;
@@ -110,7 +110,7 @@
   flex-wrap: wrap;
   column-gap: 30px;
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     column-gap: 20px;
     flex-direction: column;
   }
@@ -120,7 +120,7 @@
   width: 47.4%;
   margin-bottom: 20px;
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     width: 100%;
   }
 }
@@ -130,12 +130,12 @@
   min-height: 155px;
   margin-bottom: 30px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     margin-bottom: 35px;
     min-height: 155px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     min-height: 180px;
     margin-bottom: 30px;
   }
@@ -145,7 +145,7 @@
   padding: 15px 25px;
   max-width: 265px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     padding: 12px 25px;
   }
 }
@@ -153,13 +153,14 @@
 .questions__form-wrapper input[type='checkbox'] {
   left: 315px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     left: 350px;
+    bottom: 10.5px;
   }
 
-  @media (max-width: 769px) {
-    bottom: -15px;
-    left: -105px;
+  @media (max-width: 767px) {
+    bottom: -10px;
+    left: 5px;
   }
 }
 
@@ -169,13 +170,13 @@
   margin-left: 22px;
   align-self: start;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     margin-top: 10px;
     margin-left: 55px;
   }
 
-  @media (max-width: 769px) {
-    margin-top: 0;
-    margin-left: 0;
+  @media (max-width: 767px) {
+    margin-top: 5px;
+    margin-left: 5px;
   }
 }

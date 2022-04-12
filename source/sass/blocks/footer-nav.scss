@@ -7,7 +7,7 @@
   max-height: 130px;
   row-gap: 12px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     max-height: 100%;
     flex-wrap: nowrap;
     row-gap: 13px;
@@ -17,7 +17,7 @@
 .footer-nav__item {
   max-width: 202px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     max-width: 202px;
   }
 }

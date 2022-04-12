@@ -3,12 +3,12 @@
   padding-bottom: 125px;
   background-color: inherit;
 
-  @media (max-width: 1221px) {
-    padding: 80px 0;
+  @media (max-width: 1023px) {
+    padding: 65px 0 80px;
   }
 
-  @media (max-width: 769px) {
-    padding: 50px 0;
+  @media (max-width: 767px) {
+    padding: 34px 0;
   }
 }
 
@@ -20,7 +20,11 @@
   flex-wrap: wrap;
   gap: 30px;
 
-  @media (max-width: 769px) {
+  @media (max-width: 1023px) {
+    gap: 27px;
+  }
+
+  @media (max-width: 767px) {
     gap: 30px;
   }
 }
@@ -44,13 +48,13 @@
     background-color: $color-background-deep-sky-blue;
   }
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     padding: 33px 43px 35px 43px;
     max-width: 320px;
     min-height: 360px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     padding: 30px 30px 35px 30px;
     max-width: 270px;
     min-height: 339px;
@@ -63,11 +67,11 @@
   fill: $color-background-deep-sky-blue;
   margin-bottom: 20px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     margin-bottom: 14px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     width: 30px;
     height: 30px;
     margin-bottom: 12px;
@@ -81,12 +85,12 @@
   color: $color-background-deep-sky-blue;
   margin-bottom: 13px;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     font-size: $font-size-12;
     margin-bottom: 10px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     font-size: $font-size-13;
     margin-bottom: 12px;
   }
@@ -96,7 +100,7 @@
   color: $color-black-pearl;
   line-height: 135%;
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     font-size: $font-size-3;
   }
 }

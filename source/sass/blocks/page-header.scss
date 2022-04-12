@@ -5,11 +5,13 @@
   position: fixed;
   z-index: 3;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
+    position: static;
     padding: 20px 20px 25px 0;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
+    position: static;
     padding: 15px 11px 20px 0;
   }
 }

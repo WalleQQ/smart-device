@@ -1,22 +1,8 @@
-.logo-link {
-  display: flex;
-  align-items: center;
-  column-gap: 15px;
-  margin-right: 7px;
+.logo-link svg {
+  width: 215px;
+  height: 55px;
+
 }
 
-.logo-link p {
-  display: flex;
-  flex-direction: column;
-  white-space: nowrap;
-  row-gap: 2px;
-  font-family: $ff-roboto-condensed-bold;
-  font-size: $font-size-1;
-  line-height: $line-height-1;
-}
 
-.logo-link span {
-  font-family: $ff-roboto-medium;
-  font-size: $font-size-2;
-  line-height: $line-height-2;
-}
+

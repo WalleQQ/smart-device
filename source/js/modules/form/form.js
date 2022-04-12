@@ -44,3 +44,20 @@ forms.forEach((form) => {
     evt.target.reset();
   });
 });
+
+const focusableElements = 'button, input, textarea, [tabindex]:not([tabindex="-1"])';
+const modal = document.querySelector('.modal');
+const firstFocusableElement = modal.querySelectorAll(focusableElements)[0];
+const focusableContent = modal.querySelectorAll(focusableElements);
+const lastFocusableElement = focusableContent[focusableContent.length - 1];
+
+document.addEventListener('keydown', function (e) {
+
+  if (document.activeElement === lastFocusableElement) {
+    firstFocusableElement.focus();
+    e.preventDefault();
+  }
+
+});
+
+firstFocusableElement.focus();

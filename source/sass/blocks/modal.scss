@@ -3,30 +3,37 @@
   position: fixed;
   z-index: 2;
   top: 146px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 40px;
+  left: 49%;
+  transform: translateX(-48%);
+  padding: 47px 40px;
   background-color: $color-background-form-deep-sky-blue;
   box-sizing: inherit;
   width: 500px;
+  max-height: 613px;
+  height: 100%;
+  overflow-y: auto;
 
   &--isOpen {
     display: block;
   }
 }
 
+
 .modal__close-button {
   cursor: pointer;
+  border: none;
+  background: inherit;
   position: absolute;
   width: 27px;
   height: 27px;
   top: 25px;
-  right: 25px;
+  right: 20px;
 
   &::before,
   &::after {
     content: '';
     position: absolute;
+    top: 0;
     left: 50%;
     height: 100%;
     width: 1px;
@@ -57,4 +64,22 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+}
+
+.modal input {
+  padding: 14px 16px;
+}
+
+.modal textarea {
+  height: 155px;
+}
+
+.modal label[for='modalCheckbox'] {
+  margin-left: 10px;
+
+}
+
+
+.modal input[type='submit'] {
+  padding: 11px 60px;
 }

@@ -3,11 +3,11 @@
   max-width: $vp-1222;
   margin: 0 auto;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     padding: 0 50px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     padding: 0 25px;
   }
 }

@@ -44,9 +44,11 @@
         <nav class="main-nav">
           <a class="main-nav__logo-link logo-link">
             <svg>
+              <use xlink:href="img/sprite_auto.svg#logo-mobile"></use>
+            </svg>
+            <svg>
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
-            <p>Smart Device<span>умные технологии</span></p>
           </a>
 
           <div class="main-nav__contacts-wrapper">
@@ -275,7 +277,6 @@
             <svg>
               <use xlink:href="img/sprite_auto.svg#logo"></use>
             </svg>
-            <p>Smart Device<span>умные технологии</span></p>
           </a>
           <ul class="socials__list">
             <li class="socials__item">
@@ -422,8 +423,8 @@
       </div>
     </footer>
 
-    <section class="modal">
-      <div class="modal__close-button"></div>
+    <section class="modal" tabindex="-1">
+      <button class="modal__close-button"></button>
       <h2>Закажите звонок</h2>
       <p>
         Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное
@@ -454,7 +455,7 @@
           name="textarea"
           placeholder="Ваш вопрос"
         ></textarea>
-        <input id="modalSubmit" type="submit" value="Отправить" />
+        <input id="modalSubmit" type="submit" value="Отправить" tabindex="4"/>
         <input
           type="checkbox"
           name="checkbox"

@@ -35,10 +35,12 @@ form label {
 
 form input[type='checkbox'] {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 10px;
+  bottom: 1px;
   z-index: -1;
   opacity: 0;
+  width: 15px;
+  height: 15px;
 }
 
 form label[for='checkbox'],
@@ -70,7 +72,19 @@ form input[type='checkbox']:checked + label[for='modalCheckbox'] {
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    background: url('../../img/icons/checkbox-confirm.svg') 50% 50% no-repeat;
+    background: url('../img/icons/checkbox-confirm.svg') 50% 50% no-repeat;
+  }
+}
+
+form input[type='checkbox']:focus + label[for='checkbox'] {
+  &::before {
+    outline: 2px solid $color-default-white;
+  }
+}
+
+form input[type='checkbox']:focus + label[for='modalCheckbox'] {
+  &::before {
+    outline: 2px solid $color-default-white;
   }
 }
 
@@ -81,3 +95,4 @@ form input[type='submit'] {
   padding: 15px 60px;
   text-transform: uppercase;
 }
+

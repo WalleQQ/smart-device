@@ -1,14 +1,14 @@
 .socials {
   padding-top: 0;
 
-  @media (max-width: 1221px) {
+  @media (max-width: 1023px) {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 100%;
     grid-column: 1 / -1;
 
-    @media (max-width: 769px) {
+    @media (max-width: 767px) {
       flex-direction: column;
       align-items: center;
     }
@@ -18,17 +18,17 @@
 .socials__logo-link {
   margin-bottom: 24px;
 
-  @media (max-width: 1121px) {
+  @media (max-width: 1023px) {
     margin-bottom: 35px;
   }
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     margin-bottom: 10px;
   }
 }
 
 .socials__logo-link svg {
-  width: 55px;
+  width: 215px;
   height: 55px;
 }
 
@@ -40,7 +40,7 @@
   padding-left: 5px;
   gap: 15px;
 
-  @media (max-width: 769px) {
+  @media (max-width: 767px) {
     margin-bottom: 28px;
     padding-left: 0;
   }
