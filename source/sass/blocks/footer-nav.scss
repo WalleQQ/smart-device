@@ -21,3 +21,12 @@
     max-width: 202px;
   }
 }
+
+.footer-nav__item-link:focus {
+  outline: none;
+  color: $color-background-deep-sky-blue;
+}
+
+.footer-nav__item-link:hover {
+  color: $color-background-deep-sky-blue;
+}

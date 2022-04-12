@@ -667,6 +667,26 @@ button,
   padding: 10px 22px;
 }
 
+.main-nav a:focus {
+  outline: none;
+  color: #00b2ff;
+}
+
+.main-nav button:focus {
+  outline: none;
+  color: #00b2ff;
+  border-color: #00b2ff;
+}
+
+.main-nav a:hover {
+  color: #00b2ff;
+}
+
+.main-nav button:hover {
+  color: #00b2ff;
+  border-color: #00b2ff;
+}
+
 .button {
   display: inline-block;
   color: #f2f5f7;
@@ -878,7 +898,9 @@ form label[for='modalCheckbox']::before {
   transform: translateY(-50%);
   width: 15px;
   height: 15px;
-  background: url("../img/icons/checkbox.svg") 50% 50% no-repeat;
+  border: 1px solid #ffffff;
+  -webkit-box-sizing: 3px;
+  box-sizing: 3px;
 }
 
 form input[type='checkbox']:checked + label[for='checkbox']::after,
@@ -897,11 +919,19 @@ form input[type='checkbox']:checked + label[for='modalCheckbox']::after {
 }
 
 form input[type='checkbox']:focus + label[for='checkbox']::before {
-  outline: 2px solid #ffffff;
+  border-color: #000000;
 }
 
 form input[type='checkbox']:focus + label[for='modalCheckbox']::before {
-  outline: 2px solid #ffffff;
+  border-color: #000000;
+}
+
+form input[type='checkbox']:hover + label[for='checkbox']::before {
+  border-color: #000000;
+}
+
+form input[type='checkbox']:hover + label[for='modalCheckbox']::before {
+  border-color: #000000;
 }
 
 form input[type='submit'] {
@@ -910,6 +940,19 @@ form input[type='submit'] {
   background-color: #041827;
   padding: 15px 60px;
   text-transform: uppercase;
+}
+
+form input[type='submit']:focus {
+  outline: none;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+form input[type='submit']:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .overlay {
@@ -977,6 +1020,15 @@ form input[type='submit'] {
   max-width: 202px;
 }
 
+.footer-nav__item-link:focus {
+  outline: none;
+  color: #00b2ff;
+}
+
+.footer-nav__item-link:hover {
+  color: #00b2ff;
+}
+
 .socials {
   padding-top: 0;
 }
@@ -1017,6 +1069,22 @@ form input[type='submit'] {
 .socials__item-link svg {
   width: 40px;
   height: 40px;
+}
+
+.socials__item-link:hover svg {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.socials__item-link:focus {
+  outline: none;
+}
+
+.socials__item-link:focus svg {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .nav-section {
@@ -1065,6 +1133,20 @@ form input[type='submit'] {
 
 .address__accordion details {
   border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+}
+
+.address address:focus {
+  outline: none;
+  color: #00b2ff;
+}
+
+.address__contacts-item-link:focus {
+  outline: none;
+  color: #00b2ff;
+}
+
+.address__contacts-item-link:hover {
+  color: #00b2ff;
 }
 
 .accordion {
@@ -1159,6 +1241,19 @@ form input[type='submit'] {
 
 .promo__content-button--mobile {
   display: none;
+}
+
+.promo__content-button:focus {
+  outline: none;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.promo__content-button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .avantages {
@@ -1298,6 +1393,19 @@ form input[type='submit'] {
   padding: 14px 12px;
 }
 
+.about-company__button:focus {
+  outline: none;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.about-company__button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 .products {
   padding-top: 67px;
   padding-bottom: 140px;
@@ -1368,7 +1476,11 @@ form input[type='submit'] {
 }
 
 .products__item-link:focus {
-  outline: 1px solid #ffffff;
+  outline: 1px solid #00b2ff;
+}
+
+.products__item-link:hover {
+  outline: 1px solid #00b2ff;
 }
 
 .products__item-link h3 {

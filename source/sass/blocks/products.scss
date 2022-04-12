@@ -109,7 +109,11 @@
   height: 100%;
 
   &:focus {
-    outline: 1px solid $color-default-white;
+    outline: 1px solid $color-background-deep-sky-blue;
+  }
+
+  &:hover {
+    outline: 1px solid $color-background-deep-sky-blue;
   }
 }
 

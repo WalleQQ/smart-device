@@ -98,3 +98,12 @@
     }
   }
 }
+
+.promo__content-button:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+
+.promo__content-button:hover {
+  transform: scale(1.1);
+}

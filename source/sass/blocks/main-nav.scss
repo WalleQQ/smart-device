@@ -15,6 +15,7 @@
 
 .main-nav__logo-link svg:nth-child(1) {
   display: none;
+
   @media (max-width: 767px) {
     display: block;
   }
@@ -68,4 +69,24 @@
   background-color: inherit;
   border: 1px solid $color-alice-blue;
   padding: 10px 22px;
+}
+
+.main-nav a:focus {
+  outline: none;
+  color: $color-background-deep-sky-blue;
+}
+
+.main-nav button:focus {
+  outline: none;
+  color: $color-background-deep-sky-blue;
+  border-color: $color-background-deep-sky-blue;
+}
+
+.main-nav a:hover {
+  color: $color-background-deep-sky-blue;
+}
+
+.main-nav button:hover {
+  color: $color-background-deep-sky-blue;
+  border-color: $color-background-deep-sky-blue;
 }

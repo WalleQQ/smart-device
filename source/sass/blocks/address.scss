@@ -53,3 +53,17 @@
     line-height: 135%;
   }
 }
+
+.address address:focus {
+  outline: none;
+  color: $color-background-deep-sky-blue;
+}
+
+.address__contacts-item-link:focus {
+  outline: none;
+  color: $color-background-deep-sky-blue;
+}
+
+.address__contacts-item-link:hover {
+  color: $color-background-deep-sky-blue;
+}

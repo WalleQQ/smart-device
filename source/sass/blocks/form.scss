@@ -57,7 +57,9 @@ form label[for='modalCheckbox'] {
     transform: translateY(-50%);
     width: 15px;
     height: 15px;
-    background: url('../img/icons/checkbox.svg') 50% 50% no-repeat;
+    border: 1px solid $color-default-white;
+    box-sizing: 3px;
+    // background: url('../img/icons/checkbox.svg') 50% 50% no-repeat;
   }
 }
 
@@ -78,13 +80,25 @@ form input[type='checkbox']:checked + label[for='modalCheckbox'] {
 
 form input[type='checkbox']:focus + label[for='checkbox'] {
   &::before {
-    outline: 2px solid $color-default-white;
+    border-color: $color-default-black;
   }
 }
 
 form input[type='checkbox']:focus + label[for='modalCheckbox'] {
   &::before {
-    outline: 2px solid $color-default-white;
+    border-color: $color-default-black;
+  }
+}
+
+form input[type='checkbox']:hover + label[for='checkbox'] {
+  &::before {
+    border-color: $color-default-black;
+  }
+}
+
+form input[type='checkbox']:hover + label[for='modalCheckbox'] {
+  &::before {
+    border-color: $color-default-black;
   }
 }
 
@@ -96,3 +110,11 @@ form input[type='submit'] {
   text-transform: uppercase;
 }
 
+form input[type='submit']:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+
+form input[type='submit']:hover {
+  transform: scale(1.1);
+}
