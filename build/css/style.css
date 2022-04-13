@@ -1281,7 +1281,6 @@ form input[type='submit']:hover {
 }
 
 .avantages__item {
-  cursor: pointer;
   padding: 40px 45px 35px 45px;
   position: relative;
   max-width: 596px;
@@ -1437,6 +1436,9 @@ form input[type='submit']:hover {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-column-gap: 86px;
   -moz-column-gap: 86px;
   column-gap: 86px;
@@ -1755,6 +1757,18 @@ form input[type='submit']:hover {
   transform: rotate(90deg);
 }
 
+@media (max-width: 1919px) {
+  .page-footer__wrapper {
+    gap: 0;
+  }
+
+  .avantages__item {
+    padding: 33px 43px 35px 43px;
+    max-width: 320px;
+    min-height: 360px;
+  }
+}
+
 @media (max-width: 1023px) {
   .wrapper {
     padding: 0 50px;
@@ -1876,12 +1890,6 @@ form input[type='submit']:hover {
     gap: 27px;
   }
 
-  .avantages__item {
-    padding: 33px 43px 35px 43px;
-    max-width: 320px;
-    min-height: 360px;
-  }
-
   .avantages__item svg {
     margin-bottom: 14px;
   }
@@ -1926,6 +1934,9 @@ form input[type='submit']:hover {
   .products__item {
     max-width: 100%;
     height: 250px;
+  }
+
+  .products__item-link {
     padding: 39px 44px;
   }
 
@@ -2181,14 +2192,14 @@ form input[type='submit']:hover {
     margin-bottom: 27px;
   }
 
-  .products__item {
-    padding: 26px 30px;
-  }
-
   .products__item::after {
     width: 40px;
     height: 40px;
     background-image: url("../img/icons/arrow-mobile.svg");
+  }
+
+  .products__item-link {
+    padding: 26px 30px;
   }
 
   .products__item-link h3 {
@@ -2239,5 +2250,30 @@ form input[type='submit']:hover {
   .questions__form-wrapper label[for='checkbox'] {
     margin-top: 5px;
     margin-left: 5px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .page-footer {
+    padding: 50px 20px;
+  }
+
+  .address {
+    margin-left: 0;
+  }
+
+  .questions::before {
+    top: -40%;
+    background-position: 0 99%;
+  }
+
+  .questions .wrapper::before {
+    width: 40%;
+    height: 40%;
+    background-size: contain;
   }
 }

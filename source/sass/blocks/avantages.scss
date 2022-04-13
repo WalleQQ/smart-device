@@ -30,7 +30,6 @@
 }
 
 .avantages__item {
-  cursor: pointer;
   padding: 40px 45px 35px 45px;
   position: relative;
   max-width: 596px;
@@ -48,7 +47,7 @@
     background-color: $color-background-deep-sky-blue;
   }
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1919px) {
     padding: 33px 43px 35px 43px;
     max-width: 320px;
     min-height: 360px;

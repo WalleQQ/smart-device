@@ -52,12 +52,8 @@ const focusableContent = modal.querySelectorAll(focusableElements);
 const lastFocusableElement = focusableContent[focusableContent.length - 1];
 
 document.addEventListener('keydown', function (e) {
-
   if (document.activeElement === lastFocusableElement) {
     firstFocusableElement.focus();
     e.preventDefault();
   }
-
 });
-
-firstFocusableElement.focus();
