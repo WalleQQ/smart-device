@@ -1196,6 +1196,10 @@ form input[type='submit']:hover {
   content: '';
 }
 
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
 .promo {
   position: relative;
   background-color: #041827;
