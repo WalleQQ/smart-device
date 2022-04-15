@@ -1,9 +1,14 @@
 .main-nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   max-width: 1160px;
   column-gap: 20px;
+  padding-top: 10px;
+
+  @media (max-width: 1919px) {
+    padding-top: 0;
+  }
 }
 
 .main-nav__logo-link svg {
@@ -28,6 +33,7 @@
 }
 
 .main-nav__contacts-wrapper {
+  padding-top: 10px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
